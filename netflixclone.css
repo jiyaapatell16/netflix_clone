@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 99999999;
+    @import url(https://db.onlinewebfonts.com/c/ef6c4f19c26fbcd2b5202a88ddd932f5?family=Benguiat%2A+Bold)
+}
+body{
+    background-color: black;
+}
+.main-header-left{
+    display: flex;
+    gap: 40px;
+}
+.main-header-left> img{
+    width: 100px;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color .5s ease;
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,0.63);
+}
+.hero-section{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: 0px;
+}
+.hero-section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-hero{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+.main-hero p,h1{
+    color: white
+}
+.upper-main>h1{
+    font-family: "Benguiat* Bold";
+    color: red;
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+.upper-main>p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 20px;
+}
+.btn span{
+    margin-right: 10px;
+}
+.btn-info{
+    background-color: rgba(128, 128, 128, 0.505);
+    color: white;
+}
+
+
+.scroll-section{
+    width:100%;
+    height: 300px;
+    background-color: black;
+    bottom: -150px;
+    z-index: 4;
+    padding: 40px;
+}
+.scroll-section h4,i{
+    color: white;
+}
+.disc{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.open-close{
+    overflow: hidden;
+}
+.open-close>a{
+    margin-left: -200px;
+    transition: all 1s ease;
+    color: white;
+    text-decoration: none;
+}
+.open-close>i{
+    color: white;
+}
+.disc:hover a{
+    margin-left: 10px;
+}
+.scroll-main-video{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    align-items: center;
+
+}
+.video-scroll{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    flex-shrink: 0;
+    border-radius: 5px;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+.video-scroll:hover{
+    transform: scaleX(1.2) scaleY(2);
+    img{
+        height: 60%;
+    }
+}
+.video-scroll>img{
+    width: 100%;
+    height: 100%;
+}
+.video-scroll-icon span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: auto;
+}
+.main-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.main-footer{
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 80px;
+}
+.top-footer{
+    padding: 50px;
+    text-align: center;
+}
+.top-footer>button{
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+.question{
+    margin-left: 8%;
+    margin-bottom: 10px;
+}
+.question>a{
+    text-decoration: underline;
+    color: white;
+}
+.jiya-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.jiya-footer>div>a{
+    text-decoration: underline;
+    color: #fff;
+}
+.jiya-footer>div>a:hover{
+    color: #6B6B6B;
+    transition: ease-in;
+}
+.jiya-footer>div{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+.logo-footer{
+    margin-top: 30px;
+    padding: 0px;
+    margin-left: 5%;
+    display: inline-block;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 30px;
+    border:2px white solid;
+}
+.rightlogo-footer>i{
+    font-size: 12px;
+    margin-right: 0px;
+    gap: 50px;
+    padding: 10px;
+    
+}
+/* .leftlogo-footer>i{
+    align-items: center;
+}  */
