@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A responsive Netflix-inspired streaming landing page built with HTML, CSS and JavaScript.">
     <meta name="theme-color" content="#000000">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <title>Netflix Clone | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,97 +13,19 @@
 <body>
     <header>
         <div class="main-header-left">
-            <a class="brand" href="#home" aria-label="Netflix Clone home">
-                <img src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2026-01-09/consent/87b6a5c0-0104-4e96-a291-092c11350111/019ae4b5-d8fb-7693-90ba-7a61d24a8837/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="Netflix Clone logo">
-            </a>
-            <nav aria-label="Primary navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#shows">Shows</a></li>
-                    <li><a href="#movies">Movies</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#popular">New &amp; Popular</a></li>
-                    <li><a href="#my-list">My List</a></li>
-                    <li><a href="#browse">Browse &amp; Languages</a></li>
-                </ul>
-            </nav>
+            <a class="brand" href="#home" aria-label="Netflix Clone home"><img src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2026-01-09/consent/87b6a5c0-0104-4e96-a291-092c11350111/019ae4b5-d8fb-7693-90ba-7a61d24a8837/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="Netflix Clone logo"></a>
+            <nav aria-label="Primary navigation"><ul><li><a href="#home">Home</a></li><li><a href="#shows">Shows</a></li><li><a href="#movies">Movies</a></li><li><a href="#games">Games</a></li><li><a href="#popular">New &amp; Popular</a></li><li><a href="#my-list">My List</a></li><li><a href="#browse">Browse &amp; Languages</a></li></ul></nav>
         </div>
-        <div class="main-header-right">
-            <ul>
-                <li><button class="icon-button" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button></li>
-                <li><a href="#movies">Movies</a></li>
-                <li><button class="icon-button" aria-label="Notifications"><i class="fa fa-bell" aria-hidden="true"></i></button></li>
-                <li><button class="icon-button" aria-label="Profile"><i class="fa fa-user" aria-hidden="true"></i></button></li>
-            </ul>
-        </div>
+        <div class="main-header-right"><ul><li><button class="icon-button" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button></li><li><a href="#movies">Movies</a></li><li><button class="icon-button" aria-label="Notifications"><i class="fa fa-bell" aria-hidden="true"></i></button></li><li><button class="icon-button" aria-label="Profile"><i class="fa fa-user" aria-hidden="true"></i></button></li></ul></div>
     </header>
-
     <main id="home">
-        <section class="hero-section" aria-label="Featured title">
-            <div class="main-hero">
-                <div class="upper-main">
-                    <p class="eyebrow">Netflix Original</p>
-                    <h1>Stranger <br> Things</h1>
-                    <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and a strange little girl.</p>
-                </div>
-                <div class="lower-main">
-                    <button class="btn btn-primary" id="playButton"><span><i class="fa fa-play" aria-hidden="true"></i></span>Play</button>
-                    <button class="btn btn-info" id="infoButton"><span><i class="fa fa-info-circle" aria-hidden="true"></i></span>More Info</button>
-                </div>
-            </div>
-            <video src="WhatsApp Video 2026-02-06 at 8.02.13 AM.mp4" autoplay muted loop playsinline aria-label="Featured Stranger Things background video"></video>
-        </section>
-
-        <section class="scroll-section" id="shows">
-            <div class="disc">
-                <h2>New on Netflix</h2>
-                <div class="open-close"><a href="#shows">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
-            </div>
-            <div class="scroll-main-video" aria-label="New releases">
-                <article class="video-scroll"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AUQ1ap545wJq1Op_9GPLFAV15boesLoyZA&s" alt="Featured movie poster"><div class="video-scroll-icon"><div class="main-icon"><div><button aria-label="Play"><i class="fa fa-play"></i></button><button aria-label="Add to list"><i class="fa fa-plus"></i></button><button aria-label="Like"><i class="fa fa-thumbs-up"></i></button></div><button aria-label="More options"><i class="fa fa-angle-down"></i></button></div></div></article>
-                <article class="video-scroll poster-two" aria-label="Movie poster placeholder"></article>
-                <article class="video-scroll poster-three" aria-label="Movie poster placeholder"></article>
-                <article class="video-scroll poster-four" aria-label="Movie poster placeholder"></article>
-                <article class="video-scroll poster-five" aria-label="Movie poster placeholder"></article>
-            </div>
-        </section>
-
-        <section class="scroll-section" id="movies">
-            <div class="disc"><h2>Trending Movies</h2><div class="open-close"><a href="#movies">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div></div>
-            <div class="scroll-main-video">
-                <article class="video-scroll poster-two"></article><article class="video-scroll poster-three"></article><article class="video-scroll poster-four"></article><article class="video-scroll poster-five"></article><article class="video-scroll"></article>
-            </div>
-        </section>
-
-        <section class="scroll-section" id="popular">
-            <div class="disc"><h2>Popular on Netflix</h2><div class="open-close"><a href="#popular">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div></div>
-            <div class="scroll-main-video">
-                <article class="video-scroll poster-three"></article><article class="video-scroll poster-four"></article><article class="video-scroll poster-five"></article><article class="video-scroll"></article><article class="video-scroll poster-two"></article>
-            </div>
-        </section>
-
-        <section class="scroll-section" id="my-list">
-            <div class="disc"><h2>My List</h2><div class="open-close"><a href="#my-list">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div></div>
-            <div class="scroll-main-video">
-                <article class="video-scroll poster-four"></article><article class="video-scroll poster-five"></article><article class="video-scroll poster-two"></article><article class="video-scroll poster-three"></article><article class="video-scroll"></article>
-            </div>
-        </section>
+        <section class="hero-section" aria-label="Featured title"><div class="main-hero"><div class="upper-main"><p class="eyebrow">Netflix Original</p><h1>Stranger <br> Things</h1><p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and a strange little girl.</p></div><div class="lower-main"><button class="btn btn-primary" id="playButton"><span><i class="fa fa-play" aria-hidden="true"></i></span>Play</button><button class="btn btn-info" id="infoButton"><span><i class="fa fa-info-circle" aria-hidden="true"></i></span>More Info</button></div></div><video src="WhatsApp Video 2026-02-06 at 8.02.13 AM.mp4" autoplay muted loop playsinline aria-label="Featured background video"></video></section>
+        <section class="scroll-section" id="shows"><div class="disc"><h2>New on Netflix</h2><div class="open-close"><a href="#shows">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div></div><div class="scroll-main-video" aria-label="New releases"><article class="video-scroll"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AUQ1ap545wJq1Op_9GPLFAV15boesLoyZA&s" alt="Featured movie poster"><div class="video-scroll-icon"><div class="main-icon"><div><button aria-label="Play"><i class="fa fa-play"></i></button><button aria-label="Add to list"><i class="fa fa-plus"></i></button><button aria-label="Like"><i class="fa fa-thumbs-up"></i></button></div><button aria-label="More options"><i class="fa fa-angle-down"></i></button></div></div></article><article class="video-scroll poster-two" aria-label="Movie poster"></article><article class="video-scroll poster-three" aria-label="Movie poster"></article><article class="video-scroll poster-four" aria-label="Movie poster"></article><article class="video-scroll poster-five" aria-label="Movie poster"></article></div></section>
+        <section class="scroll-section" id="movies"><div class="disc"><h2>Trending Movies</h2><div class="open-close"><a href="#movies">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div></div><div class="scroll-main-video"><article class="video-scroll poster-two"></article><article class="video-scroll poster-three"></article><article class="video-scroll poster-four"></article><article class="video-scroll poster-five"></article><article class="video-scroll"></article></div></section>
+        <section class="scroll-section" id="popular"><div class="disc"><h2>Popular on Netflix</h2><div class="open-close"><a href="#popular">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div></div><div class="scroll-main-video"><article class="video-scroll poster-three"></article><article class="video-scroll poster-four"></article><article class="video-scroll poster-five"></article><article class="video-scroll"></article><article class="video-scroll poster-two"></article></div></section>
+        <section class="scroll-section" id="my-list"><div class="disc"><h2>My List</h2><div class="open-close"><a href="#my-list">Explore All</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div></div><div class="scroll-main-video"><article class="video-scroll poster-four"></article><article class="video-scroll poster-five"></article><article class="video-scroll poster-two"></article><article class="video-scroll poster-three"></article><article class="video-scroll"></article></div></section>
     </main>
-
-    <footer>
-        <div class="main-footer">
-            <div class="top-footer"><button id="getStarted">Get Started</button><h3>Create or restart your membership</h3></div>
-            <div class="question"><a href="#contact">Questions? Contact us</a></div>
-            <div class="jiya-footer">
-                <div><a href="#faq">FAQ</a><a href="#investor">Investor Relations</a><a href="#watch">Ways to Watch</a><a href="#corporate">Corporate Information</a><a href="#originals">Netflix Originals</a></div>
-                <div><a href="#help">Help Center</a><a href="#jobs">Jobs</a><a href="#terms">Terms of Use</a><a href="#contact">Contact Us</a></div>
-                <div><a href="#account">Account</a><a href="#gift">Redeem Gift Cards</a><a href="#privacy">Privacy</a><a href="#speed">Speed Test</a></div>
-                <div><a href="#media">Media Center</a><a href="#buy-gift">Buy Gift Cards</a><a href="#cookies">Cookie Preferences</a><a href="#legal">Legal Notices</a></div>
-            </div>
-            <div class="logo-footer"><div class="rightlogo-footer"><i class="fa fa-globe" aria-hidden="true"></i><span>English</span><i class="fa fa-angle-down" aria-hidden="true"></i></div></div>
-            <p class="copyright">Netflix Clone • Built for learning and portfolio practice</p>
-        </div>
-    </footer>
+    <footer><div class="main-footer"><div class="top-footer"><button id="getStarted">Get Started</button><h3>Create or restart your membership</h3></div><div class="question"><a href="#contact">Questions? Contact us</a></div><div class="jiya-footer"><div><a href="#faq">FAQ</a><a href="#investor">Investor Relations</a><a href="#watch">Ways to Watch</a><a href="#corporate">Corporate Information</a><a href="#originals">Netflix Originals</a></div><div><a href="#help">Help Center</a><a href="#jobs">Jobs</a><a href="#terms">Terms of Use</a><a href="#contact">Contact Us</a></div><div><a href="#account">Account</a><a href="#gift">Redeem Gift Cards</a><a href="#privacy">Privacy</a><a href="#speed">Speed Test</a></div><div><a href="#media">Media Center</a><a href="#buy-gift">Buy Gift Cards</a><a href="#cookies">Cookie Preferences</a><a href="#legal">Legal Notices</a></div></div><div class="logo-footer"><div class="rightlogo-footer"><i class="fa fa-globe" aria-hidden="true"></i><span>English</span><i class="fa fa-angle-down" aria-hidden="true"></i></div></div><p class="copyright">Netflix Clone • Built for learning and portfolio practice</p></div></footer>
     <script src="script.js"></script>
 </body>
 </html>
