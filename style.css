@@ -1,234 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto",sans-serif;
-}
-header{
-    display: flex;
-    width: 100%;
-    padding: 20px 20px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 99999999;
-    @import url(https://db.onlinewebfonts.com/c/ef6c4f19c26fbcd2b5202a88ddd932f5?family=Benguiat%2A+Bold)
-}
-body{
-    background-color: black;
-}
-.main-header-left{
-    display: flex;
-    gap: 40px;
-}
-.main-header-left> img{
-    width: 100px;
-}
-header ul{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-header ul li{
-    list-style: none;
-}
-header ul li a{
-    text-decoration: none;
-    color: white;
-    transition: color .5s ease;
-}
-header ul li a:hover{
-    text-decoration: none;
-    color: rgba(255,255,255,0.63);
-}
-.hero-section{
-    width: 100%;
-    height: 85vh;
-    position: relative;
-    top: 0px;
-}
-.hero-section video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.main-hero{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px;
-}
-.main-hero p,h1{
-    color: white
-}
-.upper-main>h1{
-    font-family: "Benguiat* Bold";
-    color: red;
-    font-size: 5vw;
-    margin-bottom: 20px;
-}
-.upper-main>p{
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
-}
-.btn{
-    padding: 10px 18px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border-radius: 5px;
-    border-style: none;
-    margin-right: 20px;
-}
-.btn span{
-    margin-right: 10px;
-}
-.btn-info{
-    background-color: rgba(128, 128, 128, 0.505);
-    color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
 
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #000; color: #fff; font-family: "Roboto", sans-serif; overflow-x: hidden; }
+a { color: #fff; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
 
-.scroll-section{
-    width:100%;
-    height: 300px;
-    background-color: black;
-    bottom: -150px;
-    z-index: 4;
-    padding: 40px;
-}
-.scroll-section h4,i{
-    color: white;
-}
-.disc{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-.open-close{
-    overflow: hidden;
-}
-.open-close>a{
-    margin-left: -200px;
-    transition: all 1s ease;
-    color: white;
-    text-decoration: none;
-}
-.open-close>i{
-    color: white;
-}
-.disc:hover a{
-    margin-left: 10px;
-}
-.scroll-main-video{
-    width: 100%;
-    height: 250px;
-    background-color: black;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    scrollbar-width: none;
-    align-items: center;
+header { display:flex; width:100%; padding:18px 4%; justify-content:space-between; align-items:center; position:fixed; top:0; background:linear-gradient(180deg,rgba(0,0,0,.85),transparent); z-index:1000; transition:background .3s ease; }
+header.scrolled { background:rgba(0,0,0,.95); }
+.main-header-left { display:flex; gap:35px; align-items:center; }
+.brand img { width:100px; display:block; }
+header ul { display:flex; gap:20px; align-items:center; }
+header ul li { list-style:none; }
+header ul li a { transition:color .3s ease; font-size:14px; }
+header ul li a:hover, header ul li a:focus { color:#b3b3b3; }
+.icon-button { border:0; background:transparent; color:#fff; padding:5px; }
+.icon-button:hover { color:#bbb; }
 
-}
-.video-scroll{
-    width: 300px;
-    height: 200px;
-    background-color: red;
-    flex-shrink: 0;
-    border-radius: 5px;
-    transition: all .5s ease;
-    overflow: hidden;
-}
-.video-scroll:hover{
-    transform: scaleX(1.2) scaleY(2);
-    img{
-        height: 60%;
-    }
-}
-.video-scroll>img{
-    width: 100%;
-    height: 100%;
-}
-.video-scroll-icon span{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin: auto;
-}
-.main-icon{
-    display: flex;
-    justify-content: space-between;
-}
-.main-footer{
-    padding: 20px;
-    background-color: #000000;
-    color: #fff;
-    margin-top: 80px;
-}
-.top-footer{
-    padding: 50px;
-    text-align: center;
-}
-.top-footer>button{
-    background-color: red;
-    color: white;
-    border-radius: 25px;
-    height: 50px;
-    width: 150px;
-    margin-bottom: 20px;
-}
-.question{
-    margin-left: 8%;
-    margin-bottom: 10px;
-}
-.question>a{
-    text-decoration: underline;
-    color: white;
-}
-.jiya-footer{
-    display: flex;
-    justify-content: space-around;
-}
-.jiya-footer>div>a{
-    text-decoration: underline;
-    color: #fff;
-}
-.jiya-footer>div>a:hover{
-    color: #6B6B6B;
-    transition: ease-in;
-}
-.jiya-footer>div{
-    display: flex;
-    flex-direction: column;
-    line-height: 40px;
-}
-.logo-footer{
-    margin-top: 30px;
-    padding: 0px;
-    margin-left: 5%;
-    display: inline-block;
-    justify-content: space-between;
-    gap: 20px;
-    border-radius: 30px;
-    border:2px white solid;
-}
-.rightlogo-footer>i{
-    font-size: 12px;
-    margin-right: 0px;
-    gap: 50px;
-    padding: 10px;
-    
-}
-/* .leftlogo-footer>i{
-    align-items: center;
-}  */
+.hero-section { width:100%; height:85vh; min-height:560px; position:relative; overflow:hidden; }
+.hero-section video { width:100%; height:100%; object-fit:cover; filter:brightness(.75); }
+.main-hero { width:100%; height:100%; position:absolute; z-index:2; display:flex; flex-direction:column; justify-content:center; padding:5%; background:linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.2) 65%,rgba(0,0,0,.5)); }
+.upper-main { max-width:650px; }
+.eyebrow { text-transform:uppercase; letter-spacing:3px; font-size:14px; font-weight:700; margin-bottom:12px; }
+.upper-main h1 { color:#e50914; font-family:"Poppins",sans-serif; font-size:clamp(3.5rem,7vw,6.5rem); line-height:.9; margin-bottom:24px; }
+.upper-main > p:not(.eyebrow) { font-size:clamp(16px,1.5vw,20px); line-height:1.6; margin-bottom:25px; }
+.btn { padding:12px 22px; font-size:1.1rem; font-weight:600; border:0; border-radius:5px; margin-right:12px; transition:transform .2s ease,background .2s ease; }
+.btn:hover { transform:scale(1.04); }
+.btn-primary { background:#fff; color:#000; }
+.btn-info { background:rgba(109,109,110,.7); color:#fff; }
+.btn span { margin-right:10px; }
 
+.scroll-section { width:100%; padding:35px 4% 10px; background:#000; }
+.disc { display:flex; gap:10px; align-items:center; margin-bottom:8px; }
+.disc h2 { font-size:20px; }
+.open-close { overflow:hidden; display:flex; align-items:center; gap:8px; }
+.open-close a { margin-left:-130px; transition:margin .4s ease; font-size:14px; color:#bbb; }
+.open-close i { color:#fff; }
+.disc:hover .open-close a { margin-left:5px; }
+.scroll-main-video { width:100%; height:240px; display:flex; gap:18px; overflow-x:auto; scrollbar-width:none; align-items:center; padding:15px 5px; }
+.scroll-main-video::-webkit-scrollbar { display:none; }
+.video-scroll { width:280px; height:180px; background:linear-gradient(135deg,#333,#111); flex-shrink:0; border-radius:6px; transition:transform .3s ease,box-shadow .3s ease; overflow:hidden; position:relative; }
+.video-scroll:hover { transform:scale(1.07); box-shadow:0 12px 30px rgba(0,0,0,.7); z-index:5; }
+.video-scroll > img { width:100%; height:100%; object-fit:cover; }
+.poster-two { background:linear-gradient(135deg,#171717,#5b1015 55%,#111); }
+.poster-three { background:linear-gradient(135deg,#111,#172d4d 55%,#090909); }
+.poster-four { background:linear-gradient(135deg,#24120b,#8b3b17 55%,#080808); }
+.poster-five { background:linear-gradient(135deg,#160c22,#522c70 55%,#050505); }
+.video-scroll-icon { position:absolute; left:0; right:0; bottom:0; padding:15px; background:linear-gradient(transparent,rgba(0,0,0,.9)); opacity:0; transition:opacity .25s ease; }
+.video-scroll:hover .video-scroll-icon { opacity:1; }
+.main-icon { display:flex; justify-content:space-between; align-items:center; }
+.main-icon div { display:flex; gap:7px; }
+.main-icon button { width:34px; height:34px; border-radius:50%; border:1px solid #aaa; background:#151515; color:#fff; }
+.main-icon button:hover { background:#fff; color:#000; }
+
+.main-footer { padding:70px 6% 30px; background:#000; color:#fff; margin-top:40px; }
+.top-footer { padding:20px 20px 50px; text-align:center; }
+.top-footer button { background:#e50914; color:#fff; border:0; border-radius:25px; height:48px; width:150px; font-weight:600; margin-bottom:18px; }
+.top-footer button:hover { background:#f40612; }
+.question { margin:0 0 25px 2%; }
+.question a, .jiya-footer a { color:#aaa; text-decoration:underline; }
+.question a:hover, .jiya-footer a:hover { color:#fff; }
+.jiya-footer { display:grid; grid-template-columns:repeat(4,1fr); gap:25px; max-width:900px; }
+.jiya-footer > div { display:flex; flex-direction:column; gap:15px; }
+.logo-footer { margin-top:35px; display:inline-block; border:1px solid #777; border-radius:4px; }
+.rightlogo-footer { display:flex; align-items:center; gap:9px; padding:9px 14px; font-size:13px; }
+.copyright { margin-top:30px; color:#777; font-size:13px; }
+
+@media (max-width:900px) {
+    header { padding:15px 4%; }
+    .main-header-left { gap:20px; }
+    .main-header-left nav { display:none; }
+    header .main-header-right li:nth-child(2) { display:none; }
+    .hero-section { min-height:500px; height:75vh; }
+    .main-hero { padding:8% 5%; }
+    .jiya-footer { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:600px) {
+    .brand img { width:80px; }
+    header ul { gap:10px; }
+    .hero-section { min-height:520px; }
+    .upper-main h1 { font-size:3.4rem; }
+    .upper-main > p:not(.eyebrow) { font-size:15px; }
+    .btn { font-size:1rem; padding:10px 15px; }
+    .scroll-section { padding-left:5%; padding-right:5%; }
+    .video-scroll { width:230px; height:145px; }
+    .scroll-main-video { height:200px; }
+    .jiya-footer { grid-template-columns:1fr 1fr; gap:20px 10px; }
+    .main-footer { padding-left:5%; padding-right:5%; }
+}
