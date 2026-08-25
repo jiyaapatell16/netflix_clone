@@ -9,10 +9,8 @@ window.addEventListener('scroll', () => {
 });
 
 playButton?.addEventListener('click', () => {
-    if (heroVideo) {
-        heroVideo.play();
-        heroVideo.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+    heroVideo?.play();
+    document.querySelector('#shows')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
 infoButton?.addEventListener('click', () => {
@@ -23,11 +21,17 @@ getStarted?.addEventListener('click', () => {
     document.querySelector('#home')?.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Add a subtle pause/play interaction to the hero video.
 heroVideo?.addEventListener('click', () => {
-    if (heroVideo.paused) {
-        heroVideo.play();
-    } else {
-        heroVideo.pause();
-    }
+    heroVideo.paused ? heroVideo.play() : heroVideo.pause();
 });
+
+// Highlight the current navigation section while scrolling.
+const sections = document.querySelectorAll('main section[id]');
+const navLinks = document.querySelectorAll('header nav a');
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
+    });
+}, { threshold: 0.35 });
+sections.forEach((section) => sectionObserver.observe(section));
