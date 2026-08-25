@@ -1,4 +1,4 @@
-# Netflix Clone
+# Netflix Clone as a project for html and css
 
 A responsive Netflix-inspired landing page built as a frontend practice project.
 
